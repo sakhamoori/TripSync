@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <!-- Teal (left) side of the pin -->
+  <path d="M100 10 C60 10 30 45 30 85 C30 130 100 210 100 210" stroke="#4ECDC4" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M100 10 C60 10 30 45 30 85 C30 130 100 210 100 210" stroke="white" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M100 10 C60 10 30 45 30 85 C30 130 100 210 100 210" stroke="#4ECDC4" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Coral (right) side of the pin -->
+  <path d="M100 10 C140 10 170 45 170 85 C170 130 100 210 100 210" stroke="#FF6B6B" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <path d="M100 10 C140 10 170 45 170 85 C170 130 100 210 100 210" stroke="white" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M100 10 C140 10 170 45 170 85 C170 130 100 210 100 210" stroke="#FF6B6B" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Inner swirl - teal -->
+  <path d="M70 85 C70 65 85 50 100 50" stroke="#4ECDC4" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M70 85 C70 105 85 120 100 120" stroke="#4ECDC4" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+  <!-- Inner swirl - coral -->
+  <path d="M130 85 C130 65 115 50 100 50" stroke="#FF6B6B" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M130 85 C130 105 115 120 100 120" stroke="#FF6B6B" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+  <!-- Center dot -->
+  <circle cx="100" cy="85" r="14" fill="#1B2A4A"/>
+</svg>
