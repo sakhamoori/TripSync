@@ -6,6 +6,7 @@ import { TripDetail } from './pages/TripDetail'
 import { Recommended } from './pages/Recommended'
 import { Explore } from './pages/Explore'
 import { Favorites } from './pages/Favorites'
+import { About } from './pages/About'
 import { CreateTripModal } from './components/CreateTripModal'
 import { TravelTimeBanner } from './components/TravelTimeBanner'
 import { ChatBot } from './components/ChatBot'
@@ -13,7 +14,7 @@ import { addDays, clsx } from './lib/utils'
 import type { Destination } from './types'
 import logoSvg from './assets/logo.svg'
 
-type Page = 'plan' | 'mytrips' | 'recommended' | 'explore' | 'favorites' | 'detail'
+type Page = 'plan' | 'mytrips' | 'recommended' | 'explore' | 'favorites' | 'about' | 'detail'
 
 const NAV_ITEMS: { key: Page; label: string }[] = [
   { key: 'plan', label: 'Plan' },
@@ -21,6 +22,7 @@ const NAV_ITEMS: { key: Page; label: string }[] = [
   { key: 'recommended', label: 'Recommended' },
   { key: 'explore', label: 'Explore' },
   { key: 'favorites', label: 'Favorites' },
+  { key: 'about', label: 'About' },
 ]
 
 function AppInner() {
@@ -137,6 +139,7 @@ function AppInner() {
           onStartTrip={handleStartTrip}
         />
       )}
+      {page === 'about' && <About />}
 
       {/* modal from Explore/Recommended → "Plan a trip here" */}
       {destForTrip && (
